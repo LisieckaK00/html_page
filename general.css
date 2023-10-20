@@ -5,26 +5,21 @@
 }
 
 a {
-    color: white;
+    color: grey;
     text-decoration: none;
 }
 
-.container {
+.navbar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .navbar {
-    background-color: blue;
+    background-color: black;
     /* position: fixed;
     top: 0;
     width: 100%; */
-}
-
-.navbar .logo {
-    font-size: 30px;
-    font-weight: bold;
 }
 
 .navbar a {
@@ -32,8 +27,13 @@ a {
     font-weight: bold;
 }
 
+.navbar-current {
+    text-decoration: underline;
+    color: white;
+}
+
 .navbar a:hover {
-    color: lightblue;
+    color: lightgrey;
 }
 
 .navbar ul {
@@ -42,7 +42,7 @@ a {
 }
 
 .navbar ul li {
-    margin-left: 20px;
+    margin: 0.5em;
 }
 
 .main {
@@ -71,4 +71,8 @@ a {
     background-color: brown;
     border-radius: 25px;
     padding: 0.7em;
+}
+
+.button a {
+    color: white;
 }

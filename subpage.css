@@ -1,13 +1,17 @@
 .subpage-layout {
-    /* background-color: green; */
     width: 50%;
     height: 100%;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
+    flex-direction: row;
 }
 
 .subpage-img {
-    object-fit: contain;
+    /* background-repeat: no-repeat;
+    background-position: center; */
+    object-fit: cover;
     background-color: aliceblue;
+}
+
+#epi {
+    background-image: url(./images/epipremnum.jpg);
 }
