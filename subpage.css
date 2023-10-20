@@ -2,13 +2,14 @@
     width: 50%;
     height: 100%;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: column; */
 }
 
 .subpage-img {
-    /* background-repeat: no-repeat;
-    background-position: center; */
-    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    /* object-fit: contain; */
+    /* height: 100%; */
     background-color: aliceblue;
 }
 
