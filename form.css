@@ -1,0 +1,26 @@
+.my-form {
+    background-color: brown;
+    display: flex;
+    justify-content: space-around;
+    font-size: large;
+}
+
+.form-subpage {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 49%;
+}
+
+.form-container {
+    margin: 1em;
+    background-color: antiquewhite;
+}
+
+.form-label {
+    display: block;
+    background-color: aqua;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    /* font-size: large; */
+}
