@@ -1,40 +1,16 @@
 #home-image {
-    background-color: aqua;
+    /* background-color: aqua; */
     object-fit: contain;
 }
 
 #home-left {
-    background-color: brown;
+    /* background-color: brown; */
     width: 40%;
     height: 100%;
 }
 
 #home-right {
-    background-color: green;
+    /* background-color: green; */
     width: 60%;
     height: 100%;
-}
-
-#home-right-content {
-    width: 70%;
-    height: 70%;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-#home-text-container {
-    background-color: bisque;
-    width: 100%;
-    font-size: 25px;
-}
-
-#home-text-container p {
-    margin: 1em;
-}
-
-#home-text-container h1 {
-    margin: 0.3em 0.3em;
 }
