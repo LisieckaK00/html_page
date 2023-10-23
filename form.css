@@ -1,26 +1,39 @@
 .my-form {
-    background-color: brown;
+    /* background-color: brown; */
     display: flex;
     justify-content: space-around;
+    align-items: center;
     font-size: large;
-}
-
-.form-subpage {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    width: 49%;
+    font-family: monospace;
+    flex-wrap: wrap;
 }
 
 .form-container {
     margin: 1em;
-    background-color: antiquewhite;
+    padding: 1em;
+    border-radius: 25px;
+    background-color: #DBF227;
+    /* background-color: #D6D58E; */
+    height: 100%;
 }
 
 .form-label {
     display: block;
-    background-color: aqua;
+    /* background-color: aqua; */
     margin-bottom: 0.5em;
     font-weight: bold;
-    /* font-size: large; */
+}
+
+.text-like {
+    padding: 0.5em;
+    border-radius: 25px;
+}
+
+.list-like {
+    margin: 0.5em;
+}
+
+.select {
+    padding: 0.5em;
+    font-size: medium;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- <html lang="en"> -->
 
 <head>
     <meta charset="UTF-8">
@@ -11,46 +11,32 @@
 
 <body>
     <!-- action="mailto:twój_adres_poczty@domena" method="post" enctype="text/plain" -->
-    <form>
-        <div class="my-form">
-            <div class="form-subpage">
+
+    <div class="main column" style="background-color: #639401ff;">
+        <nav class="navbar flex-center">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="epipremnum.html">EPIPREMNUM</a></li>
+                <li><a href="#">STRELICJA</a></li>
+                <li><a href="#">SZEFLERA</a></li>
+            </ul>
+        </nav>
+        <form>
+            <div class="my-form">
                 <div class="form-container">
                     <label for="name" class="form-label"> Enter your name and surname</label>
-                    <input name="name" type="text" placeholder="Jan Kowalski" pattern="[A-Z][a-z]+ [A-Z][a-z]+">
+                    <input name="name" type="text" placeholder="Jan Kowalski" pattern="[A-Z][a-z]+ [A-Z][a-z]+"
+                        class="text-like">
                 </div>
 
                 <div class="form-container">
                     <label for="email" class="form-label"> Enter your email</label>
-                    <input name="email" type="email" placeholder="jan.kowalski@gmail.com">
+                    <input name="email" type="email" placeholder="jan.kowalski@gmail.com" class="text-like">
                 </div>
-
-                <div class="form-container">
-                    <label for="number_of_plants" class="form-label">How many plants do you have?</label>
-                    <input type="radio" name="number_of_plants" value="only 1">only 1<br>
-                    <input type="radio" name="number_of_plants" value="1-5">1-5<br>
-                    <input type="radio" name="number_of_plants" value="5-10">5-10<br>
-                    <input type="radio" name="number_of_plants" value="10-25">10-25<br>
-                    <input type="radio" name="number_of_plants" value="you don't want to know">you don't want to
-                    know<br>
-                </div>
-
-                <div class="form-container">
-                    <label for="fav_plant" class="form-label">What is your favourite plant/plants?</label>
-                    <input type="checkbox" name="fav_plant" value="Monstera">Monstera<br>
-                    <input type="checkbox" name="fav_plant" value="Epipremnum">Epipremnum<br>
-                    <input type="checkbox" name="fav_plant" value="Strelicja">Strelicja<br>
-                    <input type="checkbox" name="fav_plant" value="Sansewieria">Sansewieria<br>
-                    <input type="checkbox" name="fav_plant" value="bananowiec">bananowiec<br>
-                    <input type="checkbox" name="fav_plant" value="Other">Other:
-                    <input name="fav_plant">
-                </div>
-            </div>
-
-            <div class="form-subpage">
 
                 <div class="form-container">
                     <label for="why" class="form-label">Why do you want to contact me?</label>
-                    <select name="why">
+                    <select name="why" class="select">
                         <option selected>Need an advice</option>
                         <option>Want to share plant progress</option>
                         <option>Want to talk about plants</option>
@@ -59,16 +45,39 @@
                 </div>
 
                 <div class="form-container">
+                    <label for="number_of_plants" class="form-label">How many plants do you have?</label>
+                    <input type="radio" name="number_of_plants" class="list-like" value="only 1">only 1<br>
+                    <input type="radio" name="number_of_plants" class="list-like" value="1-5">1-5<br>
+                    <input type="radio" name="number_of_plants" class="list-like" value="5-10">5-10<br>
+                    <input type="radio" name="number_of_plants" class="list-like" value="10-25">10-25<br>
+                    <input type="radio" name="number_of_plants" class="list-like" value="you don't want to know">you
+                    don't want to
+                    know<br>
+                </div>
+
+                <div class="form-container">
+                    <label for="fav_plant" class="form-label">What is your favourite plant/plants?</label>
+                    <input type="checkbox" name="fav_plant" class="list-like" value="Monstera">Monstera<br>
+                    <input type="checkbox" name="fav_plant" class="list-like" value="Epipremnum">Epipremnum<br>
+                    <input type="checkbox" name="fav_plant" class="list-like" value="Strelicja">Strelicja<br>
+                    <input type="checkbox" name="fav_plant" class="list-like" value="Sansewieria">Sansewieria<br>
+                    <input type="checkbox" name="fav_plant" class="list-like" value="bananowiec">bananowiec<br>
+                    <input type="checkbox" name="fav_plant" class="list-like" value="Other">Other:
+                    <input type="text" name="fav_plant" class="text-like">
+                </div>
+
+
+                <div class="form-container">
                     <label for="message" class="form-label">Enter your message</label>
                     <textarea name="message" cols="50" rows="10"
                         placeholder="Hi! I'm Jan and I'm writting to you because..."></textarea>
                 </div>
             </div>
-        </div>
 
-        <div class="flex-center">
-            <input type="submit" value="Wyślij formularz">
-        </div>
+            <div class="flex-center button">
+                <input type="submit" value="Wyślij formularz">
+            </div>
+    </div>
     </form>
 </body>
 
