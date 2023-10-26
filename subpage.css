@@ -1,18 +1,48 @@
-.subpage-layout {
-    width: 50%;
+section {
     height: 100%;
+    width: 100%;
+}
+
+.flex-space {
     display: flex;
-    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .subpage-img {
+    display: flex;
+    justify-content: center;
     background-repeat: no-repeat;
     background-position: center;
-    /* object-fit: contain; */
-    /* height: 100%; */
-    background-color: aliceblue;
+    flex-basis: 500px;
+    height: 700px;
+    margin: 30px 0;
+    background-color: antiquewhite;
 }
+
+.img-heading {
+    font-size: xx-large;
+    font-weight: bold;
+    color: #1C2B0Eff;
+    margin-top: 1em;
+}
+
+
+/* .img-card {
+    width: 30%;
+    object-fit: contain;
+    background-color: blueviolet;
+} */
 
 #epi {
     background-image: url(./images/epipremnum.jpg);
+}
+
+#szeflera {
+    background-image: url(./images/szeflera.jpg);
+}
+
+#strelicja {
+    background-image: url(./images/strelicja.jpg);
 }
