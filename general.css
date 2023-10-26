@@ -44,6 +44,7 @@ a {
 }
 
 .footer {
+    -ms-flex-item-align: end;
     background-color: lightgray;
     width: 100%;
 }
