@@ -2,7 +2,7 @@
     /* background-color: brown; */
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
     font-size: large;
     font-family: monospace;
     flex-wrap: wrap;
@@ -14,7 +14,7 @@
     border-radius: 25px;
     background-color: #DBF227;
     /* background-color: #D6D58E; */
-    height: 100%;
+    /* height: 100%; */
 }
 
 .form-label {
@@ -37,7 +37,3 @@
     padding: 0.5em;
     font-size: medium;
 }
-
-/* .form-button{
-    width: fit-content;
-} */
