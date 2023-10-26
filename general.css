@@ -43,6 +43,11 @@ a {
     margin: 0.5em;
 }
 
+.footer {
+    background-color: lightgray;
+    width: 100%;
+}
+
 .main {
     /* background-color: plum; */
     height: 100vh;
