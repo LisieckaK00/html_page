@@ -19,7 +19,8 @@
     margin: 1em;
     padding: 1em;
     border-radius: 25px;
-    background-color: #F0D37Eff;
+    background-color: #6D9247ff;
+    box-shadow: 5px 5px 5px #00000077;
 }
 
 .form-label {
@@ -31,20 +32,43 @@
 .text-like {
     padding: 0.5em;
     border-radius: 25px;
+    font-size: medium;
 }
 
 .list-like {
     margin: 0.5em;
 }
 
-.select {
+select {
     padding: 0.5em;
     font-size: medium;
+    border-radius: 25px;
 }
 
-#form-button {
+textarea {
+    font-size: medium;
+    padding: 1em;
+    border-radius: 25px;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+button {
+    font-size: medium;
+    background-color: #B8492Dff;
+    font-family: 'Times New Roman', Times, serif;
     border-radius: 25px;
     padding: 0.7em;
-    width: fit-content;
-    background-color: #B8492Dff;
+    margin-bottom: 1em;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px #00000077;
+}
+
+button:hover,
+button:focus,
+button:active {
+    background-color: #D6D58E;
+    cursor: pointer;
 }

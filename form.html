@@ -3,36 +3,38 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta content="width=device-width, initial-scale=1,maximum-scale=1,shrink-to-fit=no" name="viewport">
     <link rel="stylesheet" type="text/css" href="general.css">
     <link rel="stylesheet" type="text/css" href="form.css">
-    <title>Document</title>
+    <script>
+        function showAlert() {
+            alert("Congratulations! You've just filled a form that has no use :)");
+            document.form1.reset();
+        }
+    </script>
+    <title>Form</title>
 </head>
 
 <body>
-    <!-- action="mailto:twój_adres_poczty@domena" method="post" enctype="text/plain" -->
-
-    <!-- style="background-color: #639401ff; -->
     <div class="column" id="main-form">
         <nav class="navbar flex-center">
             <ul>
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="flowers.html">FLOWERS</a></li>
+                <li><a href="plants.html">PLANTS</a></li>
                 <li><a href="form.html" class="navbar-current">FORM</a></li>
             </ul>
         </nav>
-        <form>
+        <form name="form1">
             <div class="my-form">
                 <div class="form-container">
                     <label for="name" class="form-label"> Enter your name and surname</label>
-                    <input name="name" type="text" placeholder="Jan Kowalski" pattern="[A-Z][a-z]+ [A-Z][a-z]+"
-                        class="text-like">
+                    <input name="name" type="text" placeholder="Jan Kowalski" pattern="[a-zA-Z][a-z]+ [a-zA-Z][a-z]+ *"
+                        title="Name and surname are required." class="text-like" required>
                 </div>
 
                 <div class="form-container">
                     <label for="email" class="form-label"> Enter your email</label>
-                    <input name="email" type="email" placeholder="jan.kowalski@gmail.com" class="text-like">
+                    <input name="email" type="email" placeholder="jan.kowalski@gmail.com" class="text-like" required>
                 </div>
 
                 <div class="form-container">
@@ -47,11 +49,12 @@
 
                 <div class="form-container">
                     <label for="number_of_plants" class="form-label">How many plants do you have?</label>
-                    <input type="radio" name="number_of_plants" class="list-like" value="only 1">only 1<br>
+                    <input type="radio" name="number_of_plants" class="list-like" value="None">None<br>
+                    <input type="radio" name="number_of_plants" class="list-like" value="Only 1">Only 1<br>
                     <input type="radio" name="number_of_plants" class="list-like" value="1-5">1-5<br>
                     <input type="radio" name="number_of_plants" class="list-like" value="5-10">5-10<br>
                     <input type="radio" name="number_of_plants" class="list-like" value="10-25">10-25<br>
-                    <input type="radio" name="number_of_plants" class="list-like" value="you don't want to know">you
+                    <input type="radio" name="number_of_plants" class="list-like" value="You don't want to know">You
                     don't want to
                     know<br>
                 </div>
@@ -60,9 +63,9 @@
                     <label for="fav_plant" class="form-label">What is your favourite plant/plants?</label>
                     <input type="checkbox" name="fav_plant" class="list-like" value="Monstera">Monstera<br>
                     <input type="checkbox" name="fav_plant" class="list-like" value="Epipremnum">Epipremnum<br>
-                    <input type="checkbox" name="fav_plant" class="list-like" value="Strelicja">Strelicja<br>
-                    <input type="checkbox" name="fav_plant" class="list-like" value="Sansewieria">Sansewieria<br>
-                    <input type="checkbox" name="fav_plant" class="list-like" value="bananowiec">bananowiec<br>
+                    <input type="checkbox" name="fav_plant" class="list-like" value="Philodendron">Philodendron<br>
+                    <input type="checkbox" name="fav_plant" class="list-like" value="Strelitzia">Strelitzia<br>
+                    <input type="checkbox" name="fav_plant" class="list-like" value="Sansevieria">Sansevieria<br>
                     <input type="checkbox" name="fav_plant" class="list-like" value="Other">Other:
                     <input type="text" name="fav_plant" class="text-like">
                 </div>
@@ -70,14 +73,15 @@
 
                 <div class="form-container">
                     <label for="message" class="form-label">Enter your message</label>
-                    <textarea name="message" cols="50" rows="10"
+                    <textarea name="message" cols="40" rows="10"
                         placeholder="Hi! I'm Jan and I'm writting to you because..."></textarea>
                 </div>
             </div>
         </form>
-        <div id="form-button">
-            SEND FORM
-        </div>
+        <button onclick="showAlert()" type="submit">SUBMIT</button>
+        <footer class="footer flex-center" style="margin-top: auto;">
+            <p>designed by ME</p>
+        </footer>
     </div>
 </body>
 
