@@ -7,8 +7,9 @@
     <link rel="stylesheet" type="text/css" href="general.css">
     <link rel="stylesheet" type="text/css" href="form.css">
     <script>
-        function showAlert() {
-            alert("Congratulations! You've just filled a form that has no use :)");
+        function showAlert(field) {
+            var fieldValue = document.getElementById(field).value;
+            alert('Hi ' + fieldValue + ' !\nCongratulations! You\'ve just filled a form that has no use : ) ');
             document.form1.reset();
         }
     </script>
@@ -29,7 +30,7 @@
                 <div class="form-container">
                     <label for="name" class="form-label"> Enter your name and surname</label>
                     <input name="name" type="text" placeholder="Jan Kowalski" pattern="[a-zA-Z][a-z]+ [a-zA-Z][a-z]+ *"
-                        title="Name and surname are required." class="text-like" required>
+                        title="Name and surname are required." class="text-like" required id="name">
                 </div>
 
                 <div class="form-container">
@@ -78,7 +79,7 @@
                 </div>
             </div>
         </form>
-        <button onclick="showAlert()" type="submit">SUBMIT</button>
+        <button onclick="showAlert('name')" type="submit">SUBMIT</button>
         <footer class="footer flex-center" style="margin-top: auto;">
             <p>Katarzyna Lisiecka, 2023</p>
         </footer>
