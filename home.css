@@ -1,7 +1,3 @@
-/* #home-image {
-    width: 100%;
-    height: 100%;
-} */
 #home-image {
     width: 100%;
     height: 98%;
@@ -10,16 +6,23 @@
 
 #home-left {
     max-width: 700px;
-    /* flex: 1 1 700px; */
-    /* display: flex; */
 }
 
 #home-right {
-    /* background-color: black; */
     max-width: 1000px;
-    /* flex: 1 1 500px; */
     display: flex;
     align-items: center;
+}
+
+#animation-container {
+    height: 50px;
+    position: relative;
+}
+
+#afton {
+    width: 30px;
+    height: 50px;
+    position: absolute;
 }
 
 section {
@@ -32,7 +35,6 @@ section {
 }
 
 .text-container {
-    /* background-color: bisque; */
     width: 100%;
     padding: 25px;
 }
@@ -43,8 +45,6 @@ section {
 }
 
 .text-container h1 {
-    /* font-size: xx-large; */
     font-size: 45px;
-    /* padding: 25px 25px 0px 25px; */
     color: #639401ff;
 }

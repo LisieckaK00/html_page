@@ -6,9 +6,28 @@
     <meta content="width=device-width, initial-scale=1,maximum-scale=1,shrink-to-fit=no" name="viewport">
     <link rel="stylesheet" type="text/css" href="general.css">
     <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="icon" href="./images/afton.png">
+    <script>
+        var id = null;
+        function myMove() {
+            var elem = document.getElementById("afton");
+            var width = document.getElementById("section").offsetWidth - 30;
+            var pos = 50;
+            clearInterval(id);
+            id = setInterval(frame, 10);
+            function frame() {
+                if (pos == width) {
+                    clearInterval(id);
+                } else {
+                    pos++;
+                    elem.style.left = pos + 'px';
+                }
+            }
+        }
+    </script>
 </head>
 
-<body>
+<body onload="myMove()">
     <div class="main column">
         <!-- navbar -->
         <nav class="navbar flex-center">
@@ -18,8 +37,7 @@
                 <li><a href="form.html" class="navbar-a">FORM</a></li>
             </ul>
         </nav>
-        <section>
-            <!-- <img src="./images/main.png" id="home-image"> -->
+        <section id="section">
             <article id="home-left">
                 <img src="./images/home.png" id="home-image">
             </article>
@@ -37,6 +55,9 @@
                 </div class="text-container">
             </article>
         </section>
+        <div id="animation-container">
+            <img src="./images/afton.png" id="afton">
+        </div>
         <footer class="footer flex-center">
             <p>Katarzyna Lisiecka, 2023</p>
         </footer>
