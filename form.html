@@ -7,10 +7,17 @@
     <link rel="stylesheet" type="text/css" href="general.css">
     <link rel="stylesheet" type="text/css" href="form.css">
     <script>
-        function showAlert(field) {
-            var fieldValue = document.getElementById(field).value;
-            alert('Hi ' + fieldValue + ' !\nCongratulations! You\'ve just filled a form that has no use : ) ');
-            document.form1.reset();
+        function showAlert() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+            if (name == '' || email == '' || message == '') {
+                alert('*Please fill required fileds before submitting.')
+            } else {
+                alert('Hi ' + name + '!\nCongratulations! You\'ve just filled a form that has no use : ) ');
+                document.form1.reset();
+            }
+
         }
     </script>
     <title>Form</title>
@@ -28,18 +35,19 @@
         <form name="form1">
             <div class="my-form">
                 <div class="form-container">
-                    <label for="name" class="form-label"> Enter your name and surname</label>
+                    <label for="name" class="form-label"> Enter your name and surname*</label>
                     <input name="name" type="text" placeholder="Jan Kowalski" pattern="[a-zA-Z][a-z]+ [a-zA-Z][a-z]+ *"
                         title="Name and surname are required." class="text-like" required id="name">
                 </div>
 
                 <div class="form-container">
-                    <label for="email" class="form-label"> Enter your email</label>
-                    <input name="email" type="email" placeholder="jan.kowalski@gmail.com" class="text-like" required>
+                    <label for="email" class="form-label"> Enter your email*</label>
+                    <input name="email" type="email" placeholder="jan.kowalski@gmail.com" class="text-like" required
+                        id="email">
                 </div>
 
                 <div class="form-container">
-                    <label for="why" class="form-label">Why do you want to contact me?</label>
+                    <label for="why" class="form-label">Why do you want to contact me?*</label>
                     <select name="why" class="select">
                         <option selected>Need an advice</option>
                         <option>Want to share plant progress</option>
@@ -73,13 +81,13 @@
 
 
                 <div class="form-container">
-                    <label for="message" class="form-label">Enter your message</label>
+                    <label for="message" class="form-label">Enter your message*</label>
                     <textarea name="message" cols="40" rows="10"
-                        placeholder="Hi! I'm Jan and I'm writting to you because..."></textarea>
+                        placeholder="Hi! I'm Jan and I'm writting to you because..." required id="message"></textarea>
                 </div>
             </div>
         </form>
-        <button onclick="showAlert('name')" type="submit">SUBMIT</button>
+        <button onclick="showAlert()" type="submit">SUBMIT</button>
         <footer class="footer flex-center" style="margin-top: auto;">
             <p>Katarzyna Lisiecka, 2023</p>
         </footer>

@@ -55,6 +55,10 @@ input:invalid {
     border-color: red;
 }
 
+textarea:invalid {
+    border-color: red;
+}
+
 button {
     font-size: medium;
     background-color: #B8492Dff;
