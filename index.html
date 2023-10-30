@@ -12,7 +12,7 @@
         function myMove() {
             var elem = document.getElementById("afton");
             var width = document.getElementById("section").offsetWidth - 30;
-            var pos = 50;
+            var pos = 0;
             clearInterval(id);
             id = setInterval(frame, 10);
             function frame() {
@@ -23,6 +23,10 @@
                     elem.style.left = pos + 'px';
                 }
             }
+            window.addEventListener('resize', function () {
+                "use strict";
+                window.location.reload();
+            });
         }
     </script>
 </head>
@@ -43,14 +47,17 @@
             </article>
             <article id="home-right">
                 <div class="text-container">
-                    <h1>Welcome to my page!</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At blanditiis impedit exercitationem
-                        illo, magnam beatae, quia laudantium nostrum facere, et voluptates maxime numquam error id ea ab
-                        fugiat in necessitatibus?</p>
+                    <h1>Welcome to my website!</h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam omnis, ipsam cumque
-                        voluptatibus facilis, natus perferendis ea eius illum delectus quasi. Rem alias culpa illum
-                        ratione similique repellendus nobis! Illo.
+                        My name is Kasia Lisiecka. I graduated in technical physics earlier this year. At some point, I
+                        realized it wasn't something I wanted to do in my life. That's why I started a different
+                        major last year: computer science. I'm currently in my second year, and I'm trying to reconcile
+                        the studies with my job. I work at Aptiv alongside Systems Engineers.
+                    </p>
+                    <p>
+                        This website shows my hobby: plants. I have around 30 of them at home. You can admire my
+                        favorites here and on the <a href="plants.html">PLANTS</a> subpage. In these photographs, you
+                        can see a tiny extraterrestrial for scale (his name is Afton).
                     </p>
                 </div class="text-container">
             </article>
